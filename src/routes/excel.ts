@@ -16,7 +16,7 @@ router.post('/exportInTransitComprehensiveCost', async (req, resp) => {
 
         (async () => {
             const workbook = new ExcelJS.Workbook()
-            const worksheet = workbook.addWorksheet('Report')
+            const worksheet = workbook.addWorksheet('Sheet1')
 
             worksheet.mergeCells('A1:A3')
             worksheet.getCell('A1').value = '货品编码sku'
